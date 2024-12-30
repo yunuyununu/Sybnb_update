@@ -43,10 +43,10 @@ function Footer() {
                 navigate(`/`);
             }
         });
-     } else {
-        window.location.href = `/admin/alogin/${a_id}`;
+        } else {
+            window.location.href = `/admin/alogin/${a_id}`;
         }
-        };
+    };
     
     return (
         <div className="Footer">
