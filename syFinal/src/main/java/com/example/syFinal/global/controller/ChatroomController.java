@@ -101,8 +101,6 @@ public class ChatroomController {
 		   }
 		Map<String, Object> map = new HashMap<>();
 		map.put("dto", dto);
-		// System.out.println(dto);
-		System.out.println("메시지리스트===>"+dto);
 		return map;
 	}
 	
@@ -176,9 +174,7 @@ public class ChatroomController {
 	@RequestMapping("entrance")
 	@ResponseBody
 	public List<Map<String, Object>> entrance(@RequestParam(name = "roomId") String roomId) {
-		// System.out.println(roomId);
 		List<MessageDTO> dto = dao.entrance(roomId);
-		// System.out.println(dto);
 		List<Map<String, Object>> list = new ArrayList<>();
 		for (int i = 0; i < dto.size(); i++) {
 			Map<String, Object> map = new HashMap<>();
