@@ -53,7 +53,6 @@ public class ChatroomController {
 	@ResponseBody
 	public Map<String, Object> list(@RequestParam(name = "sender") String sender,
 			@RequestParam(name = "type") String type) {
-		// System.out.println(sender);
 		List<MessageDTO> dto = new ArrayList<>();
 		if (type.equals("guest")) {
 			dto = dao.g_list(sender);
