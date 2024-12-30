@@ -76,11 +76,8 @@ function HotelItem({HoIdx,HoName, HoImg,Dimg1,Dimg2,Dimg3, check, Dprice,Didx,St
         let img4 =`<img src=${url4} width='400px' height='400px' style="border-radius: 5px;" /><br />`;
 
         return (
-            <div style={{paddingLeft: '200px',maxWidth:'600px', height:'540px'}}> 
+            <div style={{margin: '7px',paddingLeft: '30px',maxWidth:'437px', height:'400px'}}> 
                 <div id="Img" style={{position: 'relative'}}>
-
-                    {/* <span dangerouslySetInnerHTML={{__html: img}}></span> */}
-                    
                     <Carousel
                     fullHeightHover={false} 
                     navButtonsProps={{
